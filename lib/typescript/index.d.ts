@@ -1,2 +1,2 @@
-declare const Button: () => JSX.Element;
-export { Button };
+declare const NCButton: () => JSX.Element;
+export { NCButton };

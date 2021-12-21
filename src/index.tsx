@@ -3,10 +3,11 @@ import {
   // UIManager,
   // Platform,
   // ViewStyle,
-  View,
+  // View,
   Text,
 } from 'react-native';
 import React from 'react';
+import { Button } from 'native-base';
 
 // const LINKING_ERROR =
 //   `The package 'react-native-nc-components-levelone' doesn't seem to be linked. Make sure: \n\n` +
@@ -19,15 +20,15 @@ import React from 'react';
 //   style: ViewStyle;
 // };
 
-const Button = () => {
+const NCButton = () => {
   return (
-    <View>
-      <Text>Akinn </Text>
-    </View>
+    <Button>
+      <Text>Success</Text>
+    </Button>
   );
 };
 
-export { Button };
+export { NCButton };
 
 // const ComponentName = 'NcComponentsLeveloneView';
 
