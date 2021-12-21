@@ -7,7 +7,7 @@ import {
   Text,
 } from 'react-native';
 import React from 'react';
-import { Button } from 'native-base';
+import { Button, NativeBaseProvider } from 'native-base';
 
 // const LINKING_ERROR =
 //   `The package 'react-native-nc-components-levelone' doesn't seem to be linked. Make sure: \n\n` +
@@ -22,9 +22,11 @@ import { Button } from 'native-base';
 
 const NCButton = () => {
   return (
-    <Button>
-      <Text>Success</Text>
-    </Button>
+    <NativeBaseProvider>
+      <Button>
+        <Text>Success</Text>
+      </Button>
+    </NativeBaseProvider>
   );
 };
 
