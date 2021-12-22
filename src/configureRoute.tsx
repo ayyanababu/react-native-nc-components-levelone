@@ -12,14 +12,10 @@ const getRouteConfig = (props: any) => {
     if (type === 'stack') {
       return (
         <Stack.Navigator>
-          {screens_config.map((screen: any) => {
-            const { eachScreen, index } = screen;
+          {screens_config.map((screen: any, index: number) => {
+            const { title, component } = screen;
             return (
-              <Stack.Screen
-                name={eachScreen.title}
-                component={eachScreen.component}
-                key={index}
-              />
+              <Stack.Screen name={title} component={component} key={index} />
             );
           })}
         </Stack.Navigator>
@@ -28,13 +24,8 @@ const getRouteConfig = (props: any) => {
       return (
         <Tab.Navigator>
           {screens_config.map((screen: any) => {
-            const { eachScreen } = screen;
-            return (
-              <Tab.Screen
-                name={eachScreen.title}
-                component={eachScreen.component}
-              />
-            );
+            const { title, component } = screen;
+            return <Tab.Screen name={title} component={component} />;
           })}
         </Tab.Navigator>
       );
