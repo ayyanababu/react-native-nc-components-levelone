@@ -1,2 +1,4 @@
+import getRouteConfig from './configureRoute';
+import renderComponent from './renderComponent';
 declare const NCButton: () => JSX.Element;
-export { NCButton };
+export { NCButton, getRouteConfig, renderComponent };
